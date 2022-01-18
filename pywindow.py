@@ -18,7 +18,7 @@ def main():
                 quit = True
 
     # game logic
-        player = rect(x, y, 50, 50)
+        player = Rect(x, y, 50, 50)
         pygame.draw.rect(window, (255, 255, 255), player)
         pygame.display.update()
         # .update() or .flip() either works
