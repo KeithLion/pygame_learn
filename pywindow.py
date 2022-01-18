@@ -8,7 +8,7 @@ def main():
     quit = False
 
     while not quit:
-        window.fill((0, 255, 0))
+        window.fill((0, 0, 0))
 
         keypressed = pygame.key.get_pressed()
         for event in pygame.event.get():
