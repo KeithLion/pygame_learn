@@ -1,3 +1,4 @@
+from cmath import rect
 import pygame
 import time
 import random
@@ -6,7 +7,8 @@ from pygame.locals import *
 
 def main():
     quit = False
-
+    x = 0
+    y = 0
     while not quit:
         window.fill((0, 0, 0))
 
@@ -15,6 +17,9 @@ def main():
             if event.type == QUIT:
                 quit = True
 
+    # game logic
+        player = rect(x, y, 50, 50)
+        pygame.draw.rect(window, (255, 255, 255), player)
         pygame.display.update()
         # .update() or .flip() either works
 
