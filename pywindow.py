@@ -7,8 +7,8 @@ from pygame.locals import *
 
 def main():
     quit = False
-    x = 0
-    y = 0
+    x = 300
+    y = 75
     while not quit:
         window.fill((0, 0, 0))
 
